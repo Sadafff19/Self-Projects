@@ -22,8 +22,9 @@ h1{
     grid-template-rows: repeat(3,120px);
     margin-left: 35%;
     position: relative;
+    display: none;
 }
-#box{
+.box{
     background-color: #7a2e37;
     border-radius: 10px;
     color:#DCC48E;
@@ -50,7 +51,7 @@ h1{
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
     cursor: pointer;
 }
-#box:hover{
+.box:hover{
     background-color: #7c3f46;
     color:#DCC48E;
 }
@@ -97,6 +98,40 @@ h1{
     background-color: #161616;
     color:#DCC48E;
     cursor: pointer;
+}
+.name{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 17px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.nameBox{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nameBox>input{
+    color: white;
+}
+select{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    width: 6%;
+}
+select>option{
+    background-color: #161616;
+}
+#startBtn{
+    background-color: white;
+    color: #31081F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 @media (max-width:320px){
     #box{

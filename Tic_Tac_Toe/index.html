@@ -12,16 +12,33 @@
         <p id="msg"></p>
         <button id="newgame">NEW GAME</button>
     </div>
-    <div id="container">
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
+    <div class="nameBox">
+        <label></label>
+        <input type="text" placeholder="enter player 1 name " class="name" id="player1">
+        <select id="player1Symbol">
+            <option value=""></option>
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+        <label></label>
+        <input type="text" placeholder="enter player 2 name " class="name" id="player2">
+        <select id="player2Symbol">
+            <option value=""></option>
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+        <button id="startBtn">Start Game</button>
+    </div>
+    <div id="container" >
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
     <button id="resbtn">RESET GAME</button>
     <div id="points">

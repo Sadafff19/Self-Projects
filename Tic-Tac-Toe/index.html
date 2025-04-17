@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE | GAME</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>* TIC TAC TOE *</h1>
+    <div id="win">
+        <p id="msg"></p>
+        <button id="newgame">NEW GAME</button>
+    </div>
+    <div class="nameBox">
+        <label></label>
+        <input type="text" placeholder="enter player 1 name " class="name" id="player1">
+        <select id="player1Symbol">
+            <option value=""></option>
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+        <label></label>
+        <input type="text" placeholder="enter player 2 name " class="name" id="player2">
+        <select id="player2Symbol">
+            <option value=""></option>
+            <option value="X">X</option>
+            <option value="O">O</option>
+        </select>
+        <button id="startBtn">Start Game</button>
+    </div>
+    <div id="container" >
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <button id="resbtn">RESET GAME</button>
+    <div id="points">
+        <p class="rule">Rules : </p>
+        <p>
+            1. Both the players will play one by one.<br>
+            2. The players need to create matching<br>
+            pattern whether horizontally,vertically<br>or diagonally.<br>
+         3. the first player to make any of the <br>pattern, wins.
+        </p>
+    </div>    
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+body{
+    background-color: #31081F;
+    cursor:pointer;
+}
+h1{
+    color: #dcca8e;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+    font-style:italic;
+}
+#points{
+    color: #DCC48E;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 21px;
+}
+#container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,120px);
+    grid-template-rows: repeat(3,120px);
+    margin-left: 35%;
+    position: relative;
+    display: none;
+}
+.box{
+    background-color: #7a2e37;
+    border-radius: 10px;
+    color:#DCC48E;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: cursive;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+#resbtn{
+    background-color: #0E0004;
+    color:#DCC48E;
+    width:150px;
+    height:40px;
+    border: none;
+    border-radius:10px;
+    font-family:monospace;
+    margin-left: 44%;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #7c3f46;
+    color:#DCC48E;
+}
+#resbtn:hover{
+    background-color: #161616;
+    color:#DCC48E;
+}
+.rule{
+    text-decoration: underline;
+    color: #4b1717;
+    background-color: #ecaab2;
+}
+#win{
+    width:400px;
+    height:330px;
+    border:1px solid #e4b6bb;
+    border-radius:10px;
+    background-color: #ecaab2;
+    color: #161616;
+    margin-left: 33%;
+    margin-top: 20px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    position: absolute;
+    z-index: 1000;
+    font-size: 40px;
+    font-family:cursive;
+    padding-left: 10px;
+    display: none;
+}
+#newgame{
+    background-color: #0E0004;
+    color:#DCC48E;
+    width:150px;
+    height:40px;
+    border: none;
+    border-radius:10px;
+    font-family:monospace;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+#newgame:hover{
+    background-color: #161616;
+    color:#DCC48E;
+    cursor: pointer;
+}
+.name{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 17px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.nameBox{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nameBox>input{
+    color: white;
+}
+select{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    width: 6%;
+}
+select>option{
+    background-color: #161616;
+}
+#startBtn{
+    background-color: white;
+    color: #31081F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+@media (max-width:320px){
+    #box{
+        font-size: 50px;
+    }
+    #container{
+        grid-template-columns: repeat(3,90px);
+        grid-template-rows: repeat(3,90px);
+        margin-left: 5px;
+    }
+    #resbtn{
+        margin-left: 23%;
+    }
+    #win{
+        width:200px;
+        height:130px;
+        margin-left:45px;
+        font-size: 20px;
+    }
+    #newgame{
+        width:100px;
+        height:30px;
+        margin-left:45px;
+    }
+}
+@media (max-width:375px){
+    #box{
+        font-size: 50px;
+    }
+    #container{
+        grid-template-columns: repeat(3,90px);
+        grid-template-rows: repeat(3,90px);
+        margin-left:40px;
+    }
+    #resbtn{
+        margin-left: 30%;
+    }
+    #win{
+        width:200px;
+        height:130px;
+        margin-left:70px;
+        font-size: 20px;
+    }
+    #newgame{
+        width:100px;
+        height:30px;
+        margin-left:45px;
+    }
+}
